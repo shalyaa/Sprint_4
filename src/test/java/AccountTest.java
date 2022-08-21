@@ -37,8 +37,7 @@ public class AccountTest {
     @Description("Проверка валидации имени")
     @Test
     public void checkName() {
-        Account account = new Account(name);
-        boolean actual = account.checkNameToEmboss();
+        boolean actual = new Account(name).checkNameToEmboss();
         assertEquals(expected, actual);
     }
 }
