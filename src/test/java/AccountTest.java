@@ -1,4 +1,4 @@
-import io.qameta.allure.junit4.DisplayName;
+import jdk.jfr.Description;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -34,7 +34,7 @@ public class AccountTest {
                 {null, false}};
     }
 
-    @DisplayName("Проверка валидации имени")
+    @Description("Проверка валидации имени")
     @Test
     public void checkName() {
         Account account = new Account(name);
